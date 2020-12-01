@@ -1,14 +1,21 @@
 "use strict";
 
 
+function ShowAlert(){
+    alert("alerta");
+}
 
+
+
+
+
+/*
 function cambiarColor() {
     let x = document.getElementsByClassName("titulo");
     let y = false;
 
     fetch("http://api.icndb.com/jokes/random", {
         /*
-        */
     })
 
         .then(response => response.json())
@@ -27,5 +34,5 @@ function cambiarColor() {
 
         .catch(error => console.error(error));
 }
-
-
+     */
+   

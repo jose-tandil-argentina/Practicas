@@ -1,0 +1,16 @@
+section{
+    text-align: center;
+    color:blue;
+} 
+   
+#navbarSupportedContent{
+    text-align: center;
+    color: seagreen; 
+}
+
+
+.section{
+    opacity: 1;
+    transition: opacity 3s;
+    color: red;
+}
