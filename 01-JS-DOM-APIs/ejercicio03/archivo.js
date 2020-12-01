@@ -1,12 +1,14 @@
 "use strict";
 
+const { type } = require("os");
 
 
-function cambiarColor() {
+
+function mostrarEvento() {
     let x = document.getElementsByClassName("titulo");
-    let y = false;
+    let  type = "success";
 
-    fetch("https://docs.github.com/v3/search", {
+    fetch(" http://api.icndb.com/jokes/random.", {
         /*
         */
     })
@@ -15,21 +17,41 @@ function cambiarColor() {
     
     .then(data => { 
         debugger
-        y == false ?  
-        x[0].style.color = "green" : x[0].style.color = "red";
-          x[0].innerHTML = data.value.joke;
-        /*
-        if (y == false){
+
+        if(type != "success" ){
             x[0].style.color = "red"  
-        }else if(y == true){
+        }else if( type == "success"){
             x[0].style.color = "green"
         }
-        x[0].innerHTML = data.value.joke;
-          */  
+         
     })
     
     .catch(error  => console.error(error));
 }
+
+
+
+
+
+/*
+y == false ?
+        
+x[0].style.color = "green" : x[0].style.color = "red";
+x[0].innerHTML = data.value.joke;
+
+if (y == false){
+  x[0].style.color = "red"  
+}else if(y == true){
+  x[0].style.color = "green"
+}
+[0].innerHTML = data.value.joke;
+
+
+
+
+
+
+
 
 
 
