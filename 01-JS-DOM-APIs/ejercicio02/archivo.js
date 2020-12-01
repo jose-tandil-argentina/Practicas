@@ -11,25 +11,21 @@ function cambiarColor() {
         */
     })
 
-    .then(response => response.json())
-    
-    .then(data => { 
+        .then(response => response.json())
 
-        
-        if (y == false){
-            x[0].style.color = "red"  
-        }else if(y == true){
-            x[0].style.color = "green"
-        }
-        x[0].innerHTML = data.value.joke;
-  
-    
+        .then(data => {
+            debugger
 
+            if (y == false) {
+                x[0].style.color = "red"
+            } else if (y == true) {
+                x[0].style.color = "green"
+            }
+            x[0].innerHTML = data.value.joke;
 
-    
-})
-    
-    .catch(error  => console.error(error));
+        })
+
+        .catch(error => console.error(error));
 }
 
 
